@@ -1,0 +1,26 @@
+{
+  "name": "poker",
+  "version": "1.0.0",
+  "description": "Poker serverside.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perimetral/poker.git"
+  },
+  "author": "perimetral",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/perimetral/poker/issues"
+  },
+  "homepage": "https://github.com/perimetral/poker#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "node-mysql": "^0.4.2",
+    "socket.io": "^1.4.6",
+    "uuid": "^2.0.2"
+  }
+}

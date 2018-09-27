@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="./socket.io.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+	(() => {
+		var socket = io("http://localhost:6666/");
+
+		socket.on('connect', function() {
+			console.log("connect");
+		});
+
+		socket.on('connect_error', function (data) {
+			console.log(data);
+		});
+
+		socket.on('disconnect', function () {
+			console.log("disconnect");
+		});
+
+		socket.on("reconnect", function () {
+			console.log("reconnect");
+		});
+	})();
+	</script>
+</body>
+</html>
